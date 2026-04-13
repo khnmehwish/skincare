@@ -27,13 +27,6 @@ PRICING ANALYSIS: Compare prices across different product categories.
 
 RATING TRENDS: Analyze the relationship between the number of reviews and the average rating.
 
-TECH STACK
-This project uses the following tools and libraries for data processing and analysis:
-LANGUAGE: Python
-LIBRARIES: Pandas (Data Manipulation), NumPy, Matplotlib/Seaborn
-SPREADSHEET TOOL: Microsoft Excel (for initial data cleaning and quick filtering)
-IDE: Jupyter Notebook / VS Code / Google Colab
-
 HOW TO USE
 You can interact with this dataset in two ways:
 
