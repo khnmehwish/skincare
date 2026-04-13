@@ -6,9 +6,7 @@ DATASET OVERVIEW:
 The dataset provides insights into the beauty market, focusing on product performance and consumer interest through ratings and "loves" counts.
 
 File Name: product_info.csv
-
 Primary Category: Fragrance, Bath & Body, etc.
-
 Total Columns: 9 Key Metrics
 
 DATA DICTIONARY:
