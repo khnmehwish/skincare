@@ -1,35 +1,41 @@
 # skincare
-SEPHORA PRODUCTS ANALYSIS (2023)
-PROJECT OVERVIEW
+# Sephora Product Info Dataset
 
-This project focuses on a detailed analysis of the beauty and skincare market using a dataset of products sold at Sephora. The data, updated for 2023, provides a unique look at how global beauty brands position their products, how they price them, and how consumers respond through ratings and "loves." This repository aims to transform these raw data points into clear business insights.
+This repository contains a comprehensive dataset of beauty and fragrance products from Sephora. It includes detailed information about various brands, pricing, customer ratings, and popularity metrics.
 
-DATASET DESCRIPTION
+DATASET OVERVIEW:
+The dataset provides insights into the beauty market, focusing on product performance and consumer interest through ratings and "loves" counts.
+- **File Name:** `product_info.csv`
+- **Primary Category:** Fragrance, Bath & Body, etc.
+- **Total Columns:** 9 Key Metrics
 
-The analysis is conducted using the product_info.csv file, which contains comprehensive information on thousands of beauty items. Key data features include:
+DATA DICTIONARY (Column Descriptions)
+| Column Name | Description |
+| :--- | :--- |
+| `product_id` | Unique identifier for each product. |
+| `product_name` | The full name of the beauty product. |
+| `brand_id` | Unique ID for the brand. |
+| `brand_name` | The name of the brand (e.g., NEST New York, 19-69). |
+| `loves_count` | Number of users who added the product to their "Loves" list. |
+| `rating` | Average customer rating. |
+| `reviews` | Total number of customer reviews. |
+| `price_usd` | Price of the product in US Dollars. |
+| `primary_category` | The main category of the product. |
 
-BRAND & PRODUCT IDENTITY: Covers a wide spectrum of brands, from high-end luxury labels (e.g., Yves Saint Laurent) to specialized niche brands.
+You can easily load and analyze this dataset using Python:
 
-CONSUMER SENTIMENT: Includes ratings, review counts, and loves_count, which are essential for measuring market popularity and customer satisfaction.
+```python
+import pandas as pd
 
-PRICING & VALUE: Contains detailed columns for price_usd and value_price_usd, allowing for an analysis of Sephora’s pricing strategies and "value for money" perceptions.
+# Load the dataset
+df = pd.read_csv('product_info.csv')
 
-FORMULATION & INGREDIENTS: A complete listing of ingredients for each product to explore trends in active components and "Clean Beauty."
+# View the first few rows
+print(df.head())
 
-EXCLUSIVITY INDICATORS: Tracks Sephora Exclusive, Limited Edition, and Online Only markers.
+Analysis Goals
+Brand Popularity: Identify which brands have the highest "loves_count".
 
-CORE ANALYTICAL OBJECTIVES
+Pricing Analysis: Compare prices across different product categories.
 
-PRICE VS. RATING ANALYSIS: Investigating whether higher-priced luxury products statistically receive better ratings than affordable alternatives.
-
-INGREDIENT POPULARITY: Identifying which active ingredients dominated the top-rated products of 2023.
-
-CUSTOMER LOYALTY MAPPING: Using the loves_count metric to identify "cult-favorite" brands and products.
-
-MARKET SEGMENTATION: Categorizing products to identify gaps in the market for specific skin types or price ranges.
-
-TECHNICAL STACK
-
-LANGUAGE: Python
-
-LIBRARIES: Pandas, NumPy, Matplotlib, Seaborn
+Rating Trends: Analyze the relationship between the number of reviews and the average rating.
