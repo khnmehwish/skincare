@@ -12,13 +12,18 @@ Primary Category: Fragrance, Bath & Body, etc.
 Total Columns: 9 Key Metrics
 
 DATA DICTIONARY:
- Column Name     Description
-product_id       Unique identifier for each product.
-product_name     The full name of the beauty product.
-brand_name      "The name of the brand (e.g., NEST New York)."
-loves_count     "Number of users who ""loved"" the product."
-rating           Average customer rating.
-price_usd        Price of the product in USD.
+
+product_id: Unique identifier for each product.
+
+product_name:The full name of the beauty product.
+
+brand_name: "The name of the brand (e.g., NEST New York)."
+
+loves_count: "Number of users who ""loved"" the product."
+
+rating: Average customer rating.
+
+price_usd: Price of the product in USD.
 
 ANALYSIS GOALS
 BRAND POPULARITY: Identify which brands have the highest "loves_count".
